@@ -91,6 +91,7 @@ export default function Home() {
             pl: 1,
             mt: 4,
             height: "auto",
+            minHeight: "300px",
           }}
         >
           <Typography
