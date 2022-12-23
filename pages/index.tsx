@@ -90,7 +90,7 @@ export default function Home() {
             color: "white",
             pl: 1,
             mt: 4,
-            height: "350px",
+            height: "auto",
           }}
         >
           <Typography
