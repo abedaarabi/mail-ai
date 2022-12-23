@@ -22,7 +22,7 @@ export default function Home() {
     // if (!formInput) alert("Input empty");
     evt.preventDefault();
     console.log({ formInput });
-
+    setResult("");
     setIsLoading(true);
     fetch("/api/openai", {
       method: "POST",
@@ -63,7 +63,7 @@ export default function Home() {
           <form onSubmit={handleSubmit}>
             <TextField
               fullWidth
-              label="Mail AI"
+              label="Type your email here"
               id="fullWidth"
               multiline
               onChange={handleInput}
