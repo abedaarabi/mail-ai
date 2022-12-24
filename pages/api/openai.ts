@@ -18,9 +18,10 @@ export default async function handler(
 ) {
   const response = await openai.createCompletion({
     model: "text-davinci-003",
+    // model: "text-davinci-003",
     prompt: `write this email in business form: ${req.body}`,
     temperature: 0.9,
-    max_tokens: 150,
+    max_tokens: 2048,
     top_p: 1,
     frequency_penalty: 0.0,
     presence_penalty: 0.6,

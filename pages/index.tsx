@@ -71,21 +71,21 @@ export default function Home() {
               minRows={6}
             />
 
-            <Box sx={{ mt: 1, width: "8px" }}>
+            <Box sx={{ mt: 1, width: "auto" }}>
               <LoadingButton
-                variant="contained"
+                variant="outlined"
                 endIcon={<SendIcon />}
                 type="submit"
                 loading={isLoading}
               >
-                Send
+                Write My E-mail
               </LoadingButton>
             </Box>
           </form>
         </Box>
         <Box
           sx={{
-            bgcolor: "#457b9d",
+            bgcolor: "#1769aa",
             borderRadius: "8px",
             color: "white",
             pl: 1,
@@ -94,7 +94,7 @@ export default function Home() {
             minHeight: "300px",
           }}
         >
-          <Typography
+          {/* <Typography
             variant="subtitle1"
             component="div"
             sx={{
@@ -102,7 +102,7 @@ export default function Home() {
             }}
           >
             Result:
-          </Typography>
+          </Typography> */}
           <Typography
             sx={{
               fontSize: 16,
